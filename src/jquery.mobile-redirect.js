@@ -63,13 +63,13 @@
       return false;
     },
     isOnMobileSite: function() {
-      if (window.location.href == this.config.mobileUrl)
+      if (window.location.href.indexOf(this.config.mobileUrl) > -1)
         return true;
 
       return false;
     },
     isOnFullSite: function() {
-      if (window.location.href == this.config.fullUrl)
+      if (window.location.href.indexOf(this.config.fullUrl) > -1)
         return true;
 
       return false;
