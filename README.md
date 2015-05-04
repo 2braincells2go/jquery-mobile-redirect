@@ -2,7 +2,13 @@
 Simple jQuery plugin for redirecting to mobile version of website. It also provide `Go to desktop website` link support.
 
 ## Usage
-First, make sure that you have the latest [jQuery 2.x](https://jquery.com/download/) and [jquery-cookie](https://github.com/carhartl/jquery-cookie) plugin imported. Now, simple add to your Javascript:
+First, make sure that you have the latest [jQuery 2.x](https://jquery.com/download/) and [jquery-cookie](https://github.com/carhartl/jquery-cookie) plugin imported. Now, import the plugin to your site by writing:
+
+```html
+<script src="jquery.mobile-redirect.min.js"></script>
+```
+
+And simply add to your Javascript:
 
 ```javascript
 $("#full-page").mobileRedirect({
