@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>jquery-mobile-redirect Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <h1>Full Site</h1>
+    <p>Demo of <a href="https://github.com/neonowy/jquery-mobile-redirect">jquery-mobile-redirect</a> plugin.</p>
+
+    <a href="#" id="full-site">Switch to full version</a>
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="../vendor/jquery.cookie.js"></script>
+    <script src="../dist/jquery.mobile-redirect.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $("#full-site").mobileRedirect({
+          mobileUrl: "http://localhost:8000/demo/mobile.html",
+          fullUrl: "http://localhost:8000/demo/full.html" 
+        });
+      });
+    </script>
+  </body>
+</html>
+
+
